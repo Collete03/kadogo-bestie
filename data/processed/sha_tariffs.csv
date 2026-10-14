@@ -1,0 +1,36 @@
+procedure,tariff_kes,limit_per_policy,category,notes
+Normal delivery and essential newborn care,10000,,Maternity,Free to all registered beneficiaries at Level 2 & 3 facilities
+Caesarean section and essential newborn care,30000,,Maternity,Free to all registered beneficiaries at Level 2 & 3 facilities
+Chronic Illnesses (overall cap),400000,,Chronic,"Increased from KES 150,000 to KES 400,000 in 2026 amendment"
+Holistic Care Consultation,2500,4.0,Oncology,"Access to oncologist, nutritionist, mental health, palliative, pharmacist, spiritual, social worker"
+Chemo administration,5500,,Oncology,As per treatment plan
+Chemo port insertion set and procedure,15000,1.0,Oncology,
+Full Blood Count,500,4.0,Lab,Routine lab
+Urea/Electrolytes/Creatinine,1000,4.0,Lab,Routine lab
+Liver Function Tests,1000,4.0,Lab,Routine lab
+Histology - Small Specimen,2500,,Lab,As per NCCP
+Histology - Medium Specimen,3500,,Lab,As per NCCP
+Histology - Large Specimen,5000,,Lab,As per NCCP
+Immunoperoxidase (Immunohistochemistry) per marker,3500,,Lab,
+"Cytology - Gynae (Vaginal or cervical smears, each)",1500,,Lab,
+"Cytology - Sputum, body fluids, tumour aspirates (first unit)",1500,,Lab,
+Cytology - FNA procedure,1500,,Lab,
+Flow cytometry (leukemia diagnosis) per marker,2500,,Lab,
+Bone marrow aspiration cytological examination,2200,,Lab,
+Bone marrow trephine biopsy,3500,,Lab,
+Bone marrow aspiration procedure,1500,,Procedure,
+Bone marrow trephine procedure,1500,,Procedure,
+PCR analysis for gene detection (cancer) per marker profile,8000,,Lab,
+"Tumour markers (CA125, CA19-9, CA15-3, PSA, etc.)",8000,,Lab,
+"PET Scan (F-18-FDG, Ga-68-FAPI, Ga-68-DOTANOC)",53500,1.0,Imaging,
+"PSMA PET Scan (F-18-PSMA, Ga-68-PSMA)",64200,,Imaging,
+CT-Scans,6900,1.0,Imaging,
+MRI,11000,1.0,Imaging,
+Bone Scan,15000,1.0,Imaging,
+Radio nucleoid Scan,11000,1.0,Imaging,
+Radiotherapy,3600,30.0,Therapy,Per session
+Brachytherapy (with sedation),40000,3.0,Therapy,
+SBRT/SBRS,70000,5.0,Therapy,"Up to KES 70,000"
+Supportive Care Medication,10000,,Therapy,"Up to KES 10,000"
+Aphaeretic platelets (Sickle cell patients),20000,3.0,Hematology,
+Red cell exchange (Sickle cell patients),70000,3.0,Hematology,

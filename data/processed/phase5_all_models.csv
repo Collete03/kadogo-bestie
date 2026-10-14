@@ -1,0 +1,4 @@
+Model,MAPE_test,MAE_test,RMSE_test,Test_window
+SARIMA,1.59,2.05,2.05,1 month
+XGBoost,12.41,15.37,16.9,6 months
+Prophet,2.6367045105275535,3.2247951780152797,3.8617240887821125,6 months

@@ -1,0 +1,558 @@
+month,commodity,commodity_raw,price_prior_year,price_prior_month,price_current,mom_pct,yoy_pct,source_file
+2022-12,cabbages,Cabbages,49.28,55.84,53.66,3.9,8.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2022.pdf
+2022-12,cooking_oil_salad,Cooking Oil (Salad),303.34,344.51,330.96,3.9,9.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2022.pdf
+2022-12,diesel,Diesel,111.51,162.91,162.91,,46.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2022.pdf
+2022-12,fortified_maize_flour,Fortified Maize flour,136.45,177.78,184.65,3.9,35.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2022.pdf
+2022-12,kerosene_paraffin,Kerosene/Paraffin,106.46,146.86,146.86,,38.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2022.pdf
+2022-12,maize_grain_loose,Maize Grain - Loose,56.26,76.74,77.47,1.0,37.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2022.pdf
+2022-12,mangoes,Mangoes,114.12,126.42,121.58,3.8,6.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2022.pdf
+2022-12,petrol,Petrol,130.54,178.05,178.05,,36.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2022.pdf
+2022-12,spinach,Spinach,64.36,70.03,66.12,5.6,2.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2022.pdf
+2022-12,tomatoes,Tomatoes,103.4,89.43,97.4,8.9,5.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2022.pdf
+2023-04,beans,Beans,1.0,134.47,173.62,182.33,5.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,beef_with_bones,Beef - With Bones,1.0,508.49,535.68,542.28,1.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,cabbages,Cabbages,1.0,53.57,65.17,62.16,4.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,cooking_fat,Cooking Fat,500.0,165.81,177.45,173.72,2.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,diesel,Diesel,1.0,126.45,162.91,162.91,,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,63.55,71.87,63.36,11.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,kerosene_paraffin,Kerosene/Paraffin,1.0,114.36,146.86,146.86,,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,maize_grain_loose,Maize Grain - Loose,1.0,60.95,77.63,78.87,1.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,mangoes,Mangoes,1.0,109.63,114.57,118.6,3.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,139.19,121.04,123.65,2.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,petrol,Petrol,1.0,145.52,180.05,180.05,,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,potatoes_irish,Potatoes (Irish),1.0,88.4,99.01,106.18,7.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,spinach,Spinach,1.0,72.8,78.99,69.03,12.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,sugar,Sugar,1.0,130.46,156.18,159.1,1.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-04,tomatoes,Tomatoes,1.0,112.69,113.12,107.82,4.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2023.pdf
+2023-05,beans,Beans,135.63,182.33,188.88,3.6,39.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,beef_with_bones,Beef - With Bones,513.07,542.28,551.3,1.7,7.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,cabbages,Cabbages,51.44,62.16,58.59,5.7,13.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,carrots,Carrots,88.98,104.7,111.28,6.3,25.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,diesel,Diesel,131.91,162.91,169.1,3.8,28.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,gas_lpg_13kg,Gas/LPG,3176.88,3135.39,3125.4,0.3,1.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,kale_sukuma_wiki,Kale-Sukuma Wiki,60.39,63.36,58.66,7.4,2.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,kerosene_paraffin,Kerosene/Paraffin,119.86,146.86,161.83,10.2,35.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,maize_grain_loose,Maize Grain - Loose,62.45,78.87,81.61,3.5,30.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,onion_leeks_bulbs,Onion -Leeks and Bulbs,142.17,123.65,129.99,5.1,8.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,petrol,Petrol,150.94,180.05,183.29,1.8,21.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,potatoes_irish,Potatoes (Irish),89.14,106.18,107.98,1.7,21.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,sugar,Sugar,130.27,159.1,194.29,22.1,49.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,tomatoes,Tomatoes,112.35,107.82,104.98,2.6,6.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-05,wheat_flour_white,Wheat Flour-White,165.89,185.49,189.78,2.3,14.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2023.pdf
+2023-06,cabbages,Cabbages,1.0,49.86,58.59,58.4,0.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-06,carrots,Carrots,1.0,93.18,111.28,121.29,9.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-06,diesel,Diesel,1.0,140.91,169.1,167.98,0.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-06,fortified_maize_flour,Fortified Maize flour,2.0,177.34,192.46,202.98,5.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-06,gas_lpg_13kg,Gas/LPG,13.0,3218.22,3125.4,3069.01,1.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-06,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,58.42,58.66,57.07,2.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-06,kerosene_paraffin,Kerosene/Paraffin,1.0,128.86,161.83,162.19,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-06,maize_grain_loose,Maize Grain - Loose,1.0,65.89,81.61,86.13,5.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-06,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,134.58,129.99,139.52,7.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-06,petrol,Petrol,1.0,159.94,183.29,182.63,0.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-06,potatoes_irish,Potatoes (Irish),1.0,84.85,107.98,101.41,6.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-06,sugar,Sugar,1.0,129.55,194.29,204.76,5.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-06,tomatoes,Tomatoes,1.0,112.27,104.98,111.66,6.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2023.pdf
+2023-07,beans,Beans,141.42,190.68,187.67,1.6,32.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,cabbages,Cabbages,50.4,58.4,53.67,8.1,6.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,carrots,Carrots,105.31,121.29,113.87,6.1,8.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,diesel,Diesel,140.91,167.98,180.42,7.4,28.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,fresh_cow_milk,milk,73.54,79.28,78.41,1.1,6.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,gas_lpg_13kg,Gas/LPG,3100.67,3069.01,2787.83,9.2,10.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,kerosene_paraffin,Kerosene/Paraffin,128.86,162.19,170.25,5.0,32.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,onion_leeks_bulbs,Onion -Leeks and Bulbs,127.12,139.52,155.38,11.4,22.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,oranges,Oranges,69.89,77.41,75.24,2.8,7.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,petrol,Petrol,159.94,182.63,195.32,6.9,22.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,potatoes_irish,Potatoes (Irish),81.66,101.41,89.07,12.2,9.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,spinach,Spinach,70.02,66.45,65.36,1.6,6.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,tomatoes,Tomatoes,111.38,111.66,100.43,10.1,9.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-07,wheat_flour_white,Wheat Flour-White,189.06,190.67,188.44,1.2,0.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2023.pdf
+2023-08,beans,Beans,144.9,187.67,185.27,1.3,27.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2023.pdf
+2023-08,cabbages,Cabbages,51.83,53.67,52.28,2.6,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2023.pdf
+2023-08,cooking_oil_salad,Cooking Oil (Salad),386.7,318.92,315.01,1.2,18.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2023.pdf
+2023-08,fortified_maize_flour,Fortified Maize flour,197.28,227.07,213.26,6.1,8.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2023.pdf
+2023-08,gas_lpg_13kg,Gas/LPG,3103.17,2787.83,2709.07,2.8,12.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2023.pdf
+2023-08,kerosene_paraffin,Kerosene/Paraffin,129.86,170.25,170.25,,31.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2023.pdf
+2023-08,maize_flour_loose,Maize Flour - Loose,78.38,92.73,85.92,7.3,9.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2023.pdf
+2023-08,maize_grain_loose,Maize Grain - Loose,74.19,85.64,78.66,8.2,6.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2023.pdf
+2023-08,mangoes,Mangoes,88.69,97.85,103.8,6.1,17.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2023.pdf
+2023-08,petrol,Petrol,159.94,195.32,195.32,,22.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2023.pdf
+2023-08,potatoes_irish,Potatoes (Irish),80.91,89.07,85.95,3.5,6.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2023.pdf
+2023-08,sugar,Sugar,135.18,211.57,218.25,3.2,61.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2023.pdf
+2023-09,cabbages,PATCHED — cabbages,50.99,52.28,56.16,7.4,10.1,MANUAL_PATCH_2023-09.pdf
+2023-09,diesel,PATCHED — diesel,165.91,180.42,201.73,11.8,21.6,MANUAL_PATCH_2023-09.pdf
+2023-09,gas_lpg_13kg,PATCHED — gas_lpg_13kg,3106.66,2709.07,2795.69,3.2,-10.0,MANUAL_PATCH_2023-09.pdf
+2023-09,kale_sukuma_wiki,PATCHED — kale_sukuma_wiki,57.93,58.19,60.64,4.2,4.7,MANUAL_PATCH_2023-09.pdf
+2023-09,kerosene_paraffin,PATCHED — kerosene_paraffin,148.86,170.25,203.34,19.4,36.6,MANUAL_PATCH_2023-09.pdf
+2023-09,maize_flour_loose,PATCHED — maize_flour_loose,84.95,85.92,80.19,-6.7,-5.6,MANUAL_PATCH_2023-09.pdf
+2023-09,maize_flour_sifted,PATCHED — maize_flour_sifted,180.8,191.33,179.93,-6.0,-0.5,MANUAL_PATCH_2023-09.pdf
+2023-09,maize_grain_loose,PATCHED — maize_grain_loose,75.73,78.66,74.41,-5.4,-1.7,MANUAL_PATCH_2023-09.pdf
+2023-09,petrol,PATCHED — petrol,180.05,195.32,212.25,8.7,17.9,MANUAL_PATCH_2023-09.pdf
+2023-09,potatoes_irish,PATCHED — potatoes_irish,80.69,85.95,101.77,18.4,26.1,MANUAL_PATCH_2023-09.pdf
+2023-09,tomatoes,PATCHED — tomatoes,71.51,74.18,75.18,1.3,5.1,MANUAL_PATCH_2023-09.pdf
+2023-09,wheat_flour_white,PATCHED — wheat_flour_white,198.22,198.13,191.0,-3.6,-3.6,MANUAL_PATCH_2023-09.pdf
+2023-10,beef_with_bones,PATCHED — beef_with_bones,524.6,557.97,571.95,2.5,9.0,MANUAL_PATCH_2023-10.pdf
+2023-10,carrots,PATCHED — carrots,71.89,83.21,85.58,2.8,19.0,MANUAL_PATCH_2023-10.pdf
+2023-10,diesel,PATCHED — diesel,163.92,201.73,206.21,2.2,25.8,MANUAL_PATCH_2023-10.pdf
+2023-10,fortified_maize_flour,PATCHED — fortified_maize_flour,199.93,201.72,195.21,-3.2,-2.4,MANUAL_PATCH_2023-10.pdf
+2023-10,gas_lpg_13kg,PATCHED — gas_lpg_13kg,3083.99,2795.69,3000.04,7.3,-2.7,MANUAL_PATCH_2023-10.pdf
+2023-10,kale_sukuma_wiki,PATCHED — kale_sukuma_wiki,60.13,60.64,62.11,2.4,3.3,MANUAL_PATCH_2023-10.pdf
+2023-10,kerosene_paraffin,PATCHED — kerosene_paraffin,147.87,203.34,205.79,1.2,39.2,MANUAL_PATCH_2023-10.pdf
+2023-10,maize_flour_sifted,PATCHED — maize_flour_sifted,177.66,179.93,172.5,-4.1,-2.9,MANUAL_PATCH_2023-10.pdf
+2023-10,oranges,PATCHED — oranges,73.46,79.49,81.75,2.8,11.3,MANUAL_PATCH_2023-10.pdf
+2023-10,petrol,PATCHED — petrol,179.06,212.25,217.97,2.7,21.7,MANUAL_PATCH_2023-10.pdf
+2023-10,potatoes_irish,PATCHED — potatoes_irish,90.78,101.77,111.59,9.6,22.9,MANUAL_PATCH_2023-10.pdf
+2023-10,tomatoes,PATCHED — tomatoes,69.8,77.31,81.46,5.4,16.7,MANUAL_PATCH_2023-10.pdf
+2023-10,wheat_flour_white,PATCHED — wheat_flour_white,201.03,191.0,189.55,-0.8,-5.7,MANUAL_PATCH_2023-10.pdf
+2023-11,beef_with_bones,PATCHED — beef_with_bones,522.94,571.95,582.63,1.9,11.4,MANUAL_PATCH_2023-11.pdf
+2023-11,cabbages,PATCHED — cabbages,55.84,55.53,53.55,-3.6,-4.1,MANUAL_PATCH_2023-11.pdf
+2023-11,carrots,PATCHED — carrots,68.82,85.58,87.89,2.7,27.7,MANUAL_PATCH_2023-11.pdf
+2023-11,diesel,PATCHED — diesel,162.91,206.21,204.21,-1.0,25.3,MANUAL_PATCH_2023-11.pdf
+2023-11,gas_lpg_13kg,PATCHED — gas_lpg_13kg,3004.75,3000.04,3031.82,1.1,0.9,MANUAL_PATCH_2023-11.pdf
+2023-11,kale_sukuma_wiki,PATCHED — kale_sukuma_wiki,61.9,62.11,60.65,-2.4,-2.0,MANUAL_PATCH_2023-11.pdf
+2023-11,kerosene_paraffin,PATCHED — kerosene_paraffin,146.86,205.79,203.79,-1.0,38.8,MANUAL_PATCH_2023-11.pdf
+2023-11,maize_flour_sifted,PATCHED — maize_flour_sifted,174.02,172.5,161.23,-6.5,-7.4,MANUAL_PATCH_2023-11.pdf
+2023-11,maize_grain_loose,PATCHED — maize_grain_loose,76.74,74.45,71.98,-3.3,-6.2,MANUAL_PATCH_2023-11.pdf
+2023-11,onion_leeks_bulbs,PATCHED — onion_leeks_bulbs,100.45,152.88,154.49,1.1,53.8,MANUAL_PATCH_2023-11.pdf
+2023-11,oranges,PATCHED — oranges,74.97,81.75,84.86,3.8,13.2,MANUAL_PATCH_2023-11.pdf
+2023-11,petrol,PATCHED — petrol,178.05,217.97,217.97,0.0,22.4,MANUAL_PATCH_2023-11.pdf
+2023-11,potatoes_irish,PATCHED — potatoes_irish,97.07,111.59,103.62,-7.1,6.8,MANUAL_PATCH_2023-11.pdf
+2023-11,tomatoes,PATCHED — tomatoes,68.29,81.46,95.87,17.7,40.4,MANUAL_PATCH_2023-11.pdf
+2023-11,wheat_flour_white,PATCHED — wheat_flour_white,201.05,189.55,195.87,3.3,-2.6,MANUAL_PATCH_2023-11.pdf
+2023-12,beef_with_bones,Beef - With Bones,527.63,582.63,603.51,3.0,14.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,cabbages,Cabbages,53.66,53.55,55.01,2.0,2.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,carrots,Carrots,68.16,87.89,100.67,14.5,47.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,diesel,Diesel,162.91,204.21,202.21,1.0,24.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,fortified_maize_flour,Fortified Maize flour,205.55,182.66,175.89,3.7,14.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,kale_sukuma_wiki,Kale-Sukuma Wiki,61.05,60.65,64.44,6.0,5.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,kerosene_paraffin,Kerosene/Paraffin,146.86,203.79,199.78,2.0,36.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,maize_flour_loose,Maize Flour - Loose,82.75,77.42,76.11,1.7,8.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,maize_flour_sifted,Maize Flour - Sifted,182.14,161.23,155.07,3.8,14.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,maize_grain_loose,Maize Grain - Loose,77.47,71.98,70.43,2.2,9.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,mangoes,Mangoes,94.0,109.88,103.66,5.7,10.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,petrol,Petrol,178.05,217.97,212.97,2.3,19.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,potatoes_irish,Potatoes (Irish),94.57,103.62,98.53,4.9,4.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,sugar,Sugar,158.14,217.96,214.2,1.7,35.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,tomatoes,Tomatoes,74.38,95.87,94.59,1.33,27.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2023-12,wheat_flour_white,Wheat Flour-White,203.72,195.91,194.49,0.7,4.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2023.pdf
+2024-01,beef_with_bones,Beef - With Bones,531.8,603.51,612.91,1.0,15.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,cabbages,Cabbages,53.78,55.01,60.52,10.0,12.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,carrots,Carrots,68.78,100.67,108.14,7.0,57.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,diesel,Diesel,162.91,202.21,197.21,2.5,21.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,fresh_cow_milk,Fresh unpacketed cow milk,71.27,72.72,71.72,1.4,0.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,kale_sukuma_wiki,Kale-Sukuma Wiki,60.25,64.44,63.19,1.9,4.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,kerosene_paraffin,Kerosene/Paraffin,146.86,199.78,194.96,2.4,32.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,mangoes,Mangoes,89.56,103.66,99.76,3.8,11.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,onion_leeks_bulbs,Onion -Leeks and Bulbs,99.31,153.42,150.4,1.97,51.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,oranges,Oranges,75.06,84.28,86.87,3.0,15.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,petrol,Petrol,178.05,212.97,207.97,2.3,16.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,potatoes_irish,Potatoes (Irish),91.02,98.53,100.21,1.0,10.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,sugar,Sugar,158.66,214.2,209.55,2.2,32.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-01,tomatoes,Tomatoes,80.37,94.59,91.17,3.6,13.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2024.pdf
+2024-02,beans,Beans,170.76,185.96,184.93,0.6,8.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,beef_with_bones,Beef - With Bones,533.16,612.91,621.22,1.0,16.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,carrots,Carrots,76.55,108.14,107.69,0.4,40.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,diesel,Diesel,162.91,197.21,196.21,0.5,20.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,fortified_maize_flour,Fortified Maize flour,200.35,175.32,172.75,1.5,13.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,fresh_cow_milk,Fresh packeted cow milk,57.61,57.42,57.31,0.2,0.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,gas_lpg_13kg,Gas/LPG,3101.94,3055.51,3187.1,4.0,2.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,kale_sukuma_wiki,Kale-Sukuma Wiki,66.86,63.19,65.37,3.0,2.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,kerosene_paraffin,Kerosene/Paraffin,146.86,194.96,193.96,0.5,32.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,maize_flour_loose,Maize Flour - Loose,82.13,75.31,74.11,1.6,9.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,maize_flour_sifted,Maize Flour - Sifted,176.08,156.11,154.54,1.0,12.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,maize_grain_loose,Maize Grain - Loose,76.07,71.1,68.67,3.4,9.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,petrol,Petrol,178.05,207.97,206.97,0.5,16.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,potatoes_irish,Potatoes (Irish),91.63,100.21,101.86,1.0,11.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,spinach,Spinach,73.88,70.86,73.65,3.0,0.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,sugar,Sugar,153.62,209.55,200.01,4.6,30.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,tomatoes,Tomatoes,86.64,91.17,86.01,5.7,0.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-02,wheat_flour_white,Wheat Flour-White,197.78,195.41,200.41,2.0,1.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2024.pdf
+2024-03,beef_with_bones,Beef - With Bones,1.0,535.68,621.22,624.68,0.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-03,cabbages,Cabbages,1.0,65.17,61.84,62.97,1.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-03,carrots,Carrots,1.0,83.02,107.69,104.67,26.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-03,diesel,Diesel,1.0,162.91,196.21,191.11,17.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-03,gas_lpg_13kg,Gas/LPG,13.0,3137.7,3187.1,3231.84,1.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-03,kerosene_paraffin,Kerosene/Paraffin,1.0,146.86,193.96,189.48,29.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-03,mangoes,Mangoes,1.0,88.59,99.4,107.34,8.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-03,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,101.1,150.63,167.28,11.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-03,oranges,Oranges,1.0,77.49,86.27,88.53,2.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-03,petrol,Petrol,1.0,180.05,206.97,199.77,10.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-03,potatoes_irish,Potatoes (Irish),1.0,99.01,101.86,109.74,7.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-03,sugar,Sugar,1.0,156.18,200.01,189.45,21.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-03,tomatoes,Tomatoes,1.0,86.38,86.01,87.52,1.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2024.pdf
+2024-04,beans,Beans,182.33,185.01,183.51,0.8,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,cooking_oil_salad,Cooking Oil (Salad),319.85,333.59,329.73,1.2,3.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,diesel,Diesel,162.91,191.11,181.11,5.2,11.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,fortified_maize_flour,Fortified Maize flour,209.29,163.94,159.01,3.0,24.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,gas_lpg_13kg,Gas/LPG,3135.39,3231.84,3242.11,0.3,3.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,kale_sukuma_wiki,Kale-Sukuma Wiki,63.36,65.94,65.13,1.2,2.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,kerosene_paraffin,Kerosene/Paraffin,146.86,189.48,171.18,9.7,16.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,maize_flour_loose,Maize Flour - Loose,84.29,67.02,65.16,2.8,22.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,maize_flour_sifted,Maize Flour - Sifted,186.29,145.57,142.19,2.3,23.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,maize_grain_loose,Maize Grain - Loose,78.87,65.31,62.98,3.6,20.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,onion_leeks_bulbs,Onion -Leeks and Bulbs,103.28,167.28,177.02,5.8,71.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,oranges,Oranges,78.1,88.53,92.07,4.0,17.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,petrol,Petrol,180.05,199.77,194.46,2.7,8.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,potatoes_irish,Potatoes (Irish),106.18,109.74,111.82,1.9,5.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,sugar,Sugar,159.1,189.45,173.7,8.3,9.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,tomatoes,Tomatoes,82.34,87.52,91.25,4.3,10.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-04,wheat_flour_white,Wheat Flour-White,195.65,190.72,186.03,2.5,4.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2024.pdf
+2024-06,cabbages,Cabbages,1.0,58.4,63.18,72.52,14.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,carrots,Carrots,1.0,97.66,102.74,106.93,4.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,cooking_oil_salad,Cooking Oil (Salad),1.0,318.43,328.46,326.36,0.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,diesel,Diesel,1.0,167.98,179.91,173.83,3.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,fortified_maize_flour,Fortified Maize flour,2.0,225.95,155.42,152.38,2.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,gas_lpg_13kg,Gas/LPG,13.0,3069.01,3221.29,3213.97,0.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,57.07,74.9,82.94,10.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,kerosene_paraffin,Kerosene/Paraffin,1.0,162.19,169.52,163.82,3.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,maize_flour_loose,Maize Flour - Loose,1.0,90.91,64.86,63.76,1.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,maize_flour_sifted,Maize Flour - Sifted,2.0,201.97,137.7,134.89,2.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,maize_grain_loose,Maize Grain - Loose,1.0,86.13,61.94,61.17,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,mangoes,Mangoes,1.0,96.17,110.07,115.98,5.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,116.53,182.11,178.7,1.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,oranges,Oranges,1.0,77.41,92.98,90.66,2.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,petrol,Petrol,1.0,182.63,193.46,190.46,1.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,spinach,Spinach,1.0,66.45,88.37,98.4,11.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,sugar,Sugar,1.0,204.76,172.72,168.59,2.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-06,wheat_flour_white,Wheat Flour-White,2.0,201.12,183.69,180.95,1.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2024.pdf
+2024-07,cabbages,Cabbages,53.67,72.52,78.42,8.1,46.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,carrots,Carrots,91.69,106.93,108.87,1.8,18.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,cooking_oil_salad,Cooking Oil (Salad),318.92,326.36,328.73,0.7,3.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,diesel,Diesel,180.42,173.83,172.33,0.9,4.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,fortified_maize_flour,Fortified Maize flour,227.07,152.38,147.3,3.3,35.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,gas_lpg_13kg,Gas/LPG,2787.83,3213.97,3219.58,0.2,15.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,kerosene_paraffin,Kerosene/Paraffin,170.25,163.82,162.52,0.8,4.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,maize_flour_sifted,Maize Flour - Sifted,202.93,134.89,130.38,3.3,35.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,maize_grain_loose,Maize Grain - Loose,85.64,61.17,60.16,1.7,29.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,mangoes,Mangoes,97.85,115.98,117.9,1.7,20.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,onion_leeks_bulbs,Onion -Leeks and Bulbs,129.79,178.7,171.41,4.1,32.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,petrol,Petrol,195.32,190.46,189.46,0.5,3.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,sugar,Sugar,211.57,168.59,164.42,2.5,22.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,tomatoes,Tomatoes,76.69,104.48,98.68,5.5,28.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-07,wheat_flour_white,Wheat Flour-White,198.77,180.95,177.07,2.1,10.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2024.pdf
+2024-08,beef_with_bones,Beef - With Bones,1.0,557.47,631.45,633.34,0.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-08,cabbages,Cabbages,1.0,52.28,78.42,77.7,48.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-08,carrots,Carrots,1.0,83.71,108.87,105.58,26.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-08,diesel,Diesel,1.0,180.42,172.33,172.33,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-08,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,58.19,83.7,79.87,37.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-08,kerosene_paraffin,Kerosene/Paraffin,1.0,170.25,162.52,162.52,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-08,mangoes,Mangoes,1.0,103.8,117.9,121.02,2.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-08,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,148.43,171.41,161.83,9.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-08,oranges,Oranges,1.0,76.83,91.05,93.94,3.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-08,petrol,Petrol,1.0,195.32,189.46,189.46,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-08,potatoes_irish,Potatoes (Irish),1.0,85.95,121.97,130.57,7.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-08,spinach,Spinach,1.0,64.83,98.16,91.55,41.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-08,tomatoes,Tomatoes,1.0,74.18,98.68,86.84,17.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2024.pdf
+2024-09,beans,Beans,1.0,184.67,183.88,185.07,0.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2024.pdf
+2024-09,beef_with_bones,Beef - With Bones,1.0,557.97,633.34,639.03,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2024.pdf
+2024-09,cabbages,Cabbages,1.0,56.16,77.7,78.33,0.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2024.pdf
+2024-09,diesel,Diesel,1.0,201.73,172.33,172.33,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2024.pdf
+2024-09,gas_lpg_13kg,Gas/LPG,13.0,2795.69,3217.85,3196.04,14.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2024.pdf
+2024-09,maize_grain_loose,Maize Grain - Loose,1.0,74.41,59.24,59.64,0.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2024.pdf
+2024-09,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,151.17,161.83,162.62,0.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2024.pdf
+2024-09,oranges,Oranges,1.0,79.49,93.94,98.87,5.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2024.pdf
+2024-09,petrol,Petrol,1.0,212.25,189.46,189.46,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2024.pdf
+2024-09,potatoes_irish,Potatoes (Irish),1.0,101.77,130.57,133.57,2.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2024.pdf
+2024-10,beef_with_bones,Beef - With Bones,1.0,571.95,639.03,650.2,1.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2024.pdf
+2024-10,carrots,Carrots,1.0,85.58,105.02,111.05,5.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2024.pdf
+2024-10,cooking_oil_salad,Cooking Oil (Salad),1.0,325.94,329.16,332.37,1.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2024.pdf
+2024-10,gas_lpg_13kg,Gas/LPG,13.0,3000.04,3196.04,3183.29,6.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2024.pdf
+2024-10,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,62.11,80.42,79.37,27.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2024.pdf
+2024-10,mangoes,Mangoes,1.0,111.05,122.84,134.97,9.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2024.pdf
+2024-10,oranges,Oranges,1.0,81.75,98.87,103.94,5.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2024.pdf
+2024-10,tomatoes,Tomatoes,1.0,81.46,86.81,89.53,3.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2024.pdf
+2024-11,cabbages,Cabbages,1.0,53.55,77.29,75.29,40.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,carrots,Carrots,1.0,87.89,111.05,108.37,23.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,cooking_oil_salad,Cooking Oil (Salad),1.0,326.54,332.37,342.71,3.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,diesel,Diesel,1.0,204.21,168.82,168.82,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,fortified_maize_flour,Fortified Maize flour,2.0,182.66,144.64,151.77,4.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,fresh_cow_milk,Fresh packeted cow milk,500.0,56.53,56.78,56.64,0.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,gas_lpg_13kg,Gas/LPG,13.0,3031.82,3183.29,3147.66,3.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,maize_flour_loose,Maize Flour - Loose,1.0,77.42,66.28,67.58,2.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,maize_flour_sifted,Maize Flour - Sifted,2.0,161.23,127.87,134.37,5.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,maize_grain_loose,Maize Grain - Loose,1.0,71.98,59.84,60.71,1.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,154.49,161.28,156.97,1.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,petrol,Petrol,1.0,217.97,181.33,181.33,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,potatoes_irish,Potatoes (Irish),1.0,103.62,133.04,129.35,24.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,sugar,Sugar,1.0,217.96,150.33,158.23,5.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,tomatoes,Tomatoes,1.0,95.87,89.53,91.9,2.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-11,wheat_flour_white,Wheat Flour-White,2.0,195.91,167.42,169.75,1.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2024.pdf
+2024-12,beans,Beans,1.0,186.89,183.24,184.84,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2024.pdf
+2024-12,cabbages,Cabbages,1.0,55.01,75.29,73.18,33.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2024.pdf
+2024-12,fortified_maize_flour,Fortified Maize flour,2.0,175.89,151.77,160.58,5.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2024.pdf
+2024-12,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,64.44,79.33,79.85,0.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2024.pdf
+2024-12,maize_flour_loose,Maize Flour - Loose,1.0,76.11,67.58,68.82,1.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2024.pdf
+2024-12,maize_flour_sifted,Maize Flour - Sifted,2.0,155.07,134.37,143.74,7.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2024.pdf
+2024-12,maize_grain_loose,Maize Grain - Loose,1.0,70.43,60.71,61.6,1.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2024.pdf
+2024-12,mangoes,Mangoes,1.0,103.66,133.37,125.05,20.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2024.pdf
+2024-12,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,153.42,156.97,155.25,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2024.pdf
+2024-12,potatoes_irish,Potatoes (Irish),1.0,98.53,129.35,122.94,24.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2024.pdf
+2024-12,sugar,Sugar,1.0,214.2,158.23,159.69,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2024.pdf
+2024-12,tomatoes,Tomatoes,1.0,94.59,91.9,93.56,1.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2024.pdf
+2025-01,cabbages,Cabbages,60.52,73.18,76.87,5.0,27.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2025.pdf
+2025-01,kale_sukuma_wiki,Kale-Sukuma Wiki,63.19,79.85,82.93,3.9,31.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2025.pdf
+2025-01,onion_leeks_bulbs,Onion -Leeks and Bulbs,91.93,94.9,101.37,6.8,10.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2025.pdf
+2025-01,oranges,Oranges,86.87,106.6,108.61,1.9,25.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2025.pdf
+2025-01,tomatoes,Tomatoes,65.18,66.89,78.88,17.9,21.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2025.pdf
+2025-02,beans,Beans,1.0,184.93,185.9,185.03,0.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2025.pdf
+2025-02,cabbages,Cabbages,1.0,61.84,76.87,75.52,22.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2025.pdf
+2025-02,cooking_oil_salad,Cooking Oil (Salad),1.0,333.31,344.68,350.1,1.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2025.pdf
+2025-02,diesel,Diesel,1.0,196.21,167.84,167.84,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2025.pdf
+2025-02,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,65.37,82.93,83.32,0.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2025.pdf
+2025-02,kerosene_paraffin,Kerosene/Paraffin,1.0,193.96,152.18,152.18,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2025.pdf
+2025-02,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,92.07,101.37,102.37,1.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2025.pdf
+2025-02,petrol,Petrol,1.0,206.97,177.25,177.25,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2025.pdf
+2025-02,potatoes_irish,Potatoes (Irish),1.0,101.86,123.35,121.09,18.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2025.pdf
+2025-02,sugar,Sugar,1.0,200.01,161.34,166.45,3.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2025.pdf
+2025-02,tomatoes,Tomatoes,1.0,61.49,78.88,79.88,1.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2025.pdf
+2025-03,beef_with_bones,Beef - with Bones,1.0,624.68,666.74,672.52,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2025.pdf
+2025-03,diesel,Diesel,1.0,191.11,167.84,167.84,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2025.pdf
+2025-03,fortified_maize_flour,Fortified Maize flour,2.0,163.94,160.33,165.05,2.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2025.pdf
+2025-03,gas_lpg_13kg,Gas/LPG,13.0,3231.84,3139.65,3146.03,0.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2025.pdf
+2025-03,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,65.94,83.32,88.51,6.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2025.pdf
+2025-03,maize_grain_loose,Maize Grain - Loose,1.0,65.31,62.68,64.72,3.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2025.pdf
+2025-03,petrol,Petrol,1.0,199.77,177.25,177.25,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2025.pdf
+2025-03,potatoes_irish,Potatoes (Irish),1.0,109.74,121.09,126.48,4.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2025.pdf
+2025-03,tomatoes,Tomatoes,1.0,62.57,79.88,80.88,1.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2025.pdf
+2025-04,beef_with_bones,Beef - With Bones,1.0,625.84,672.52,674.8,0.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2025.pdf
+2025-04,cabbages,Cabbages,1.0,63.29,77.9,74.75,18.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2025.pdf
+2025-04,cooking_oil_salad,Cooking Oil (Salad),1.0,329.73,353.01,349.28,5.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2025.pdf
+2025-04,fortified_maize_flour,Fortified Maize flour,2.0,159.01,165.05,169.41,2.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2025.pdf
+2025-04,gas_lpg_13kg,Gas/LPG,13.0,3242.11,3146.03,3156.19,0.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2025.pdf
+2025-04,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,65.13,88.51,86.47,32.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2025.pdf
+2025-04,maize_grain_loose,Maize Grain - Loose,1.0,62.98,64.72,66.6,2.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2025.pdf
+2025-04,potatoes_irish,Potatoes (Irish),1.0,111.82,126.48,131.55,4.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2025.pdf
+2025-04,sugar,Sugar,1.0,173.7,166.08,167.25,0.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2025.pdf
+2025-04,tomatoes,Tomatoes,1.0,65.23,80.88,81.88,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2025.pdf
+2025-05,beef_with_bones,Beef - With Bones,1.0,628.5,674.8,685.67,1.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2025_1.pdf
+2025-05,diesel,Diesel,1.0,179.91,165.64,165.64,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2025_1.pdf
+2025-05,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,74.9,86.47,89.53,3.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2025_1.pdf
+2025-05,kerosene_paraffin,Kerosene/Paraffin,1.0,169.52,149.78,149.78,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2025_1.pdf
+2025-05,maize_flour_sifted,Maize Flour - Sifted,2.0,137.7,151.02,156.92,3.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2025_1.pdf
+2025-05,maize_grain_loose,Maize Grain - Loose,1.0,61.94,66.6,68.49,2.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2025_1.pdf
+2025-05,oranges,Oranges,1.0,92.98,110.18,108.15,16.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2025_1.pdf
+2025-05,petrol,Petrol,1.0,193.46,175.3,175.3,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2025_1.pdf
+2025-05,potatoes_irish,Potatoes (Irish),1.0,118.74,131.55,126.67,6.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2025_1.pdf
+2025-05,sugar,Sugar,1.0,172.72,167.25,174.47,4.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2025_1.pdf
+2025-05,tomatoes,Tomatoes,1.0,74.35,81.88,82.88,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2025_1.pdf
+2025-06,beef_with_bones,Beef - With Bones,631.54,685.67,690.15,0.7,9.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2025.pdf
+2025-06,cabbages,Cabbages,72.52,76.77,85.1,10.8,17.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2025.pdf
+2025-06,carrots,Carrots,106.93,116.05,128.97,11.1,20.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2025.pdf
+2025-06,kale_sukuma_wiki,Kale-Sukuma Wiki,82.94,89.53,90.42,1.0,9.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2025.pdf
+2025-06,maize_flour_sifted,Maize Flour - Sifted,134.89,156.92,160.22,2.1,18.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2025.pdf
+2025-06,maize_grain_loose,Maize Grain - Loose,61.17,68.49,70.4,2.8,15.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2025.pdf
+2025-06,spinach,Spinach,98.4,102.15,104.52,2.3,6.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2025.pdf
+2025-06,sugar,Sugar,168.59,174.47,184.13,5.5,9.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2025.pdf
+2025-06,tomatoes,Tomatoes,74.69,82.88,83.88,1.2,12.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2025.pdf
+2025-07,beef_with_bones,Beef - With Bones,1.0,631.45,690.15,693.85,0.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,cabbages,Cabbages,1.0,78.42,85.1,83.98,7.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,carrots,Carrots,1.0,108.87,128.97,128.08,17.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,cooking_oil_salad,Cooking Oil (Salad),1.0,328.73,347.17,345.03,5.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,diesel,Diesel,1.0,172.33,163.89,172.75,5.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,gas_lpg_13kg,Gas/LPG,13.0,3219.58,3134.91,3146.58,0.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,83.7,90.42,91.62,1.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,kerosene_paraffin,Kerosene/Paraffin,1.0,162.52,147.92,157.76,6.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,maize_flour_loose,Maize Flour - Loose,1.0,64.57,74.68,75.88,1.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,maize_grain_loose,Maize Grain - Loose,1.0,60.16,70.4,71.24,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,104.78,106.37,107.37,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,oranges,Oranges,1.0,91.05,108.51,105.72,16.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,petrol,Petrol,1.0,189.46,178.19,187.37,5.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,potatoes_irish,Potatoes (Irish),1.0,121.97,126.38,123.83,1.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,sugar,Sugar,1.0,164.42,184.13,186.78,1.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-07,tomatoes,Tomatoes,1.0,70.55,83.88,84.88,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2025_1.pdf
+2025-08,cabbages,Cabbages,1.0,77.7,83.98,89.25,6.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,carrots,Carrots,1.0,105.58,128.08,131.21,2.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,diesel,Diesel,1.0,172.33,172.75,172.75,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,fortified_maize_flour,Fortified Maize flour,2.0,148.54,179.35,176.32,18.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,gas_lpg_13kg,Gas/LPG,13.0,3217.85,3146.58,3158.35,0.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,79.87,91.62,93.41,1.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,maize_flour_loose,Maize Flour - Loose,1.0,66.33,75.88,75.21,13.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,maize_grain_loose,Maize Grain - Loose,1.0,59.24,71.24,70.93,19.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,mangoes,Mangoes,1.0,121.02,140.43,142.97,1.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,98.92,107.37,108.37,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,oranges,Oranges,1.0,93.94,105.72,104.95,11.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,potatoes_irish,Potatoes (Irish),1.0,130.57,123.83,124.71,0.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,tomatoes,Tomatoes,1.0,62.08,84.88,85.88,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-08,wheat_flour_white,Wheat Flour-White,2.0,173.85,168.51,170.09,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2025.pdf
+2025-09,beef_with_bones,Beef - With Bones,1.0,639.03,693.59,698.5,0.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-09,cabbages,Cabbages,1.0,78.33,89.25,91.67,2.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-09,diesel,Diesel,1.0,172.33,172.75,172.64,0.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-09,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,80.42,93.41,92.48,15.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-09,maize_flour_loose,Maize Flour - Loose,1.0,66.03,75.21,74.47,12.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-09,maize_flour_sifted,Maize Flour - Sifted,2.0,130.18,156.99,152.28,17.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-09,maize_grain_loose,Maize Grain - Loose,1.0,59.64,70.93,68.14,14.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-09,mangoes,Mangoes,1.0,122.84,142.97,147.19,3.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-09,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,99.4,108.37,109.37,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-09,oranges,Oranges,1.0,98.87,104.95,110.84,5.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-09,potatoes_irish,Potatoes (Irish),1.0,133.57,124.71,127.96,2.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-09,sugar,Sugar,1.0,153.8,186.53,185.21,20.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-09,tomatoes,Tomatoes,1.0,62.06,85.88,86.88,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2025 (1).pdf
+2025-10,beef_with_bones,Beef - With Bones,1.0,650.2,698.5,701.67,0.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,cabbages,Cabbages,1.0,53.04,62.91,63.79,1.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,diesel,Diesel,1.0,168.82,172.64,172.64,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,fortified_maize_flour,Fortified Maize flour,2.0,144.64,172.41,168.56,16.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,79.37,92.48,91.56,15.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,maize_flour_sifted,Maize Flour - Sifted,2.0,127.87,152.28,148.79,16.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,maize_grain_loose,Maize Grain - Loose,1.0,59.84,68.14,68.05,13.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,mangoes,Mangoes,1.0,134.97,147.19,152.85,3.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,98.58,109.37,110.37,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,oranges,Oranges,1.0,103.94,110.84,115.54,4.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,petrol,Petrol,1.0,181.33,185.59,185.59,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,potatoes_irish,Potatoes (Irish),1.0,94.9,91.27,92.69,1.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,spinach,Spinach,1.0,91.77,103.43,102.7,11.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,sugar,Sugar,1.0,150.33,185.21,184.35,22.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-10,tomatoes,Tomatoes,1.0,64.01,86.88,87.88,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-October-2025_1.pdf
+2025-11,beef_with_bones,Beef - With Bones,1.0,654.71,701.67,712.11,1.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,carrots,Carrots,1.0,108.37,132.88,132.32,22.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,cooking_oil_salad,Cooking Oil (Salad),1.0,342.71,343.44,345.27,0.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,diesel,Diesel,1.0,168.82,172.64,172.64,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,fortified_maize_flour,Fortified Maize flour,2.0,151.77,168.56,162.11,6.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,gas_lpg_13kg,Gas/LPG,13.0,3147.66,3133.49,3132.93,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,79.33,91.56,94.07,2.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,kerosene_paraffin,Kerosene/Paraffin,1.0,152.18,155.96,155.96,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,maize_flour_loose,Maize Flour - Loose,1.0,67.58,74.64,74.14,9.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,maize_flour_sifted,Maize Flour - Sifted,2.0,134.37,148.79,143.96,7.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,95.95,106.21,111.37,4.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,oranges,Oranges,1.0,105.45,115.54,118.86,2.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,petrol,Petrol,1.0,181.33,185.59,185.59,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,potatoes_irish,Potatoes (Irish),1.0,92.26,92.69,92.34,0.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,sugar,Sugar,1.0,158.23,184.35,182.37,15.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,tomatoes,Tomatoes,1.0,65.7,87.88,86.04,30.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-11,wheat_flour_white,Wheat Flour-White,2.0,169.75,169.46,171.3,1.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-November-2025.pdf
+2025-12,beef_with_bones,Beef - With Bones,1.0,667.54,712.11,719.29,1.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2025.pdf
+2025-12,diesel,Diesel,1.0,165.82,172.64,172.64,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2025.pdf
+2025-12,gas_lpg_13kg,Gas/LPG,13.0,3143.85,3132.93,3145.9,0.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2025.pdf
+2025-12,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,79.85,94.07,98.51,4.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2025.pdf
+2025-12,kerosene_paraffin,Kerosene/Paraffin,1.0,149.18,155.96,155.96,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2025.pdf
+2025-12,maize_flour_loose,Maize Flour - Loose,1.0,68.82,74.14,77.9,5.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2025.pdf
+2025-12,maize_grain_loose,Maize Grain - Loose,1.0,61.6,68.08,69.39,1.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2025.pdf
+2025-12,mangoes,Mangoes,1.0,125.05,156.48,153.99,23.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2025.pdf
+2025-12,petrol,Petrol,1.0,176.96,185.59,185.59,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2025.pdf
+2025-12,potatoes_irish,Potatoes (Irish),1.0,87.7,92.34,94.99,2.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2025.pdf
+2025-12,sugar,Sugar,1.0,159.69,182.37,179.6,12.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2025.pdf
+2025-12,tomatoes,Tomatoes,1.0,66.89,86.04,87.18,1.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-December-2025.pdf
+2026-01,cabbages,Cabbages,1.0,52.75,65.39,71.47,9.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2026.pdf
+2026-01,diesel,Diesel,1.0,167.84,172.64,171.64,2.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2026.pdf
+2026-01,fortified_maize_flour,Fortified Maize flour,2.0,161.6,162.56,173.51,6.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2026.pdf
+2026-01,fresh_cow_milk,Fresh packeted cow milk,500.0,56.73,55.98,56.5,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2026.pdf
+2026-01,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,82.93,98.51,102.45,4.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2026.pdf
+2026-01,kerosene_paraffin,Kerosene/Paraffin,1.0,152.18,155.96,154.96,1.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2026.pdf
+2026-01,maize_flour_sifted,Maize Flour - Sifted,2.0,143.79,145.12,154.0,6.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2026.pdf
+2026-01,maize_grain_loose,Maize Grain - Loose,1.0,62.22,69.39,71.28,2.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2026.pdf
+2026-01,mangoes,Mangoes,1.0,120.14,153.99,149.09,24.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2026.pdf
+2026-01,petrol,Petrol,1.0,177.25,185.59,183.59,3.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2026.pdf
+2026-01,potatoes_irish,Potatoes (Irish),1.0,87.99,94.99,98.25,3.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2026.pdf
+2026-01,sugar,Sugar,1.0,161.34,179.6,174.17,7.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-January-2026.pdf
+2026-02,beef_with_bones,Beef - With Bones,1.0,666.74,721.35,724.4,0.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,cabbages,Cabbages,1.0,51.83,71.47,74.33,4.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,cooking_oil_salad,Cooking Oil (Salad),1.0,350.1,342.5,345.83,1.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,fortified_maize_flour,Fortified Maize flour,2.0,160.33,173.51,175.79,1.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,fresh_cow_milk,Fresh packeted cow milk,500.0,56.79,56.5,56.8,0.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,83.32,102.45,104.9,2.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,kerosene_paraffin,Kerosene/Paraffin,1.0,152.18,154.96,153.96,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,maize_grain_loose,Maize Grain - Loose,1.0,62.68,71.28,72.19,1.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,mangoes,Mangoes,1.0,120.26,149.09,144.37,20.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,petrol,Petrol,1.0,177.25,183.59,179.35,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,potatoes_irish,Potatoes (Irish),1.0,86.37,98.25,102.16,4.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,sugar,Sugar,1.0,166.45,174.17,166.56,0.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,tomatoes,Tomatoes,1.0,79.88,87.98,87.9,10.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-02,wheat_flour_white,Wheat Flour-White,2.0,165.29,172.15,170.78,3.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-February-2026.pdf
+2026-03,beef_with_bones,Beef - With Bones,1.0,672.52,724.4,737.3,1.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2026.pdf
+2026-03,cabbages,Cabbages,1.0,53.46,74.33,71.52,33.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2026.pdf
+2026-03,diesel,Diesel,1.0,167.84,167.72,167.72,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2026.pdf
+2026-03,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,88.51,104.9,104.34,17.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2026.pdf
+2026-03,maize_grain_loose,Maize Grain - Loose,1.0,64.72,72.19,70.44,8.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2026.pdf
+2026-03,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,103.37,114.37,115.37,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2026.pdf
+2026-03,petrol,Petrol,1.0,177.25,179.35,179.35,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2026.pdf
+2026-03,potatoes_irish,Potatoes (Irish),1.0,90.22,102.16,107.16,4.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2026.pdf
+2026-03,spinach,Spinach,1.0,99.92,113.11,111.58,11.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2026.pdf
+2026-03,tomatoes,Tomatoes,1.0,80.88,87.9,99.6,13.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2026.pdf
+2026-03,wheat_flour_white,Wheat Flour-White,2.0,167.39,170.78,170.33,1.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-March-2026.pdf
+2026-04,beef_with_bones,Beef - With Bones,1.0,674.8,737.3,749.65,1.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,cabbages,Cabbages,1.0,51.3,71.52,69.15,34.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,cooking_oil_salad,Cooking Oil (Salad),1.0,349.28,344.5,353.77,2.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,diesel,Diesel,1.0,165.64,167.72,197.81,17.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,gas_lpg_13kg,Gas/LPG,13.0,3156.19,3132.34,3361.56,7.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,86.47,104.34,106.86,2.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,kerosene_paraffin,Kerosene/Paraffin,1.0,149.78,153.96,153.96,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,maize_flour_sifted,Maize Flour - Sifted,2.0,151.02,155.76,158.06,1.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,maize_grain_loose,Maize Grain - Loose,1.0,66.6,70.44,71.3,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,oranges,Oranges,1.0,110.18,123.57,121.28,10.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,petrol,Petrol,1.0,175.3,179.35,198.67,10.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,potatoes_irish,Potatoes (Irish),1.0,93.83,107.16,110.16,2.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,spinach,Spinach,1.0,97.12,111.58,115.16,3.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-04,tomatoes,Tomatoes,1.0,81.88,99.6,108.6,9.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-April-2026.pdf
+2026-05,beef_with_bones,Beef - With Bones,1.0,685.67,749.65,761.2,1.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,cabbages,Cabbages,1.0,52.69,69.15,72.61,5.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,cooking_oil_salad,Cooking Oil (Salad),1.0,348.74,353.77,355.79,0.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,diesel,Diesel (Nairobi),1.0,164.86,196.63,232.86,18.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,gas_lpg_13kg,Gas/LPG,13.0,3141.3,3361.56,3471.58,3.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,89.53,106.86,110.07,3.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,kerosene_paraffin,Kerosene/Paraffin (Nairobi),1.0,148.99,152.78,191.38,25.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,maize_flour_sifted,Maize Flour - Sifted,2.0,156.92,158.06,159.12,0.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,105.37,116.37,117.37,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,oranges,Oranges,1.0,108.15,121.28,121.08,12.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,petrol,Petrol (Nairobi),1.0,174.63,197.6,214.25,8.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,potatoes_irish,Potatoes (Irish),1.0,90.35,110.16,111.16,0.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,spinach,Spinach,1.0,102.15,115.16,121.11,5.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,sugar,Sugar,1.0,174.47,164.35,165.66,0.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-05,tomatoes,Tomatoes,1.0,82.88,108.6,120.75,11.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-May-2026.pdf
+2026-06,beef_with_bones,Beef - With Bones,1.0,690.15,761.2,760.75,10.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,cabbages,Cabbages,1.0,58.4,72.61,73.19,0.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,cooking_oil_salad,Cooking Oil (Salad),1.0,347.17,355.79,358.63,0.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,diesel,Diesel (Nairobi),1.0,171.58,232.86,222.86,29.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,fresh_cow_milk,Fresh packeted cow milk,500.0,56.38,57.09,57.33,0.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,90.42,110.07,114.44,4.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,kerosene_paraffin,Kerosene/Paraffin (Nairobi),1.0,156.58,191.38,191.38,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,maize_flour_sifted,Maize Flour - Sifted,2.0,160.22,159.12,159.78,0.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,maize_grain_loose,Maize Grain - Loose,1.0,70.4,71.69,72.52,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,petrol,Petrol (Nairobi),1.0,186.31,214.25,214.03,14.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,potatoes_irish,Potatoes (Irish),1.0,90.15,111.16,111.1,23.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,spinach,Spinach,1.0,104.52,121.11,124.81,3.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,sugar,Sugar,1.0,184.13,165.66,166.62,0.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-06,tomatoes,Tomatoes,1.0,83.88,120.75,117.87,40.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-June-2026.pdf
+2026-07,beef_with_bones,Beef - With Bones,1.0,693.85,760.75,768.34,1.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,carrots,Carrots,1.0,128.08,145.29,140.11,9.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,cooking_oil_salad,Cooking Oil (Salad),1.0,345.03,358.63,358.09,3.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,diesel,Diesel,1.0,172.75,224.04,224.04,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,fresh_cow_milk,Fresh packeted cow milk,500.0,56.26,57.33,57.55,0.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,gas_lpg_13kg,Gas/LPG,13.0,3146.58,3470.82,3432.21,9.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,91.62,114.44,116.22,1.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,kerosene_paraffin,Kerosene/Paraffin,1.0,157.76,192.56,192.56,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,mangoes,Mangoes,1.0,140.43,145.58,150.19,3.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,107.37,118.37,119.37,0.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,petrol,Petrol,1.0,187.37,214.95,214.95,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,potatoes_irish,Potatoes (Irish),1.0,88.33,111.1,113.46,2.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,sugar,Sugar,1.0,186.78,166.62,167.41,0.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-07,tomatoes,Tomatoes,1.0,84.88,117.87,113.47,33.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-July-2026.pdf
+2026-08,beef_with_bones,Beef - With Bones,1.0,693.59,768.34,777.36,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,cabbages,Cabbages,1.0,61.25,73.14,74.52,1.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,carrots,Carrots,1.0,131.21,140.11,138.95,5.9,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,cooking_oil_salad,Cooking Oil (Salad),1.0,343.6,358.09,356.72,3.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,diesel,Diesel,1.0,172.75,224.04,219.04,26.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,fresh_cow_milk,Fresh packeted cow milk,500.0,56.29,57.55,57.74,0.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,gas_lpg_13kg,Gas/LPG,13.0,3158.35,3432.21,3426.89,8.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,93.41,116.22,121.21,4.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,kerosene_paraffin,Kerosene/Paraffin,1.0,156.76,192.56,192.56,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,maize_grain_loose,Maize Grain - Loose,1.0,70.93,72.45,72.23,1.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,mangoes,Mangoes,1.0,142.97,150.19,155.56,3.6,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,onion_leeks_bulbs,Onion -Leeks and Bulbs,1.0,108.37,119.37,120.37,0.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,oranges,Oranges,1.0,104.95,122.98,124.69,1.4,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,petrol,Petrol,1.0,186.37,214.95,214.95,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,potatoes_irish,Potatoes (Irish),1.0,88.96,113.46,118.05,4.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,tomatoes,Tomatoes,1.0,85.88,113.47,111.03,29.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-08,wheat_flour_white,Wheat Flour-White,2.0,170.09,172.98,173.35,0.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-August-2026.pdf
+2026-09,beans,Beans,1.0,182.09,180.65,182.76,1.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,beef_with_bones,Beef - With Bones,1.0,698.5,777.36,782.68,0.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,cabbages,Cabbages,1.0,62.91,74.52,79.16,6.2,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,cooking_oil_salad,Cooking Oil (Salad),1.0,342.99,356.72,359.36,0.7,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,diesel,Diesel,1.0,172.64,219.04,219.04,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,fresh_cow_milk,Fresh unpacketed cow milk,1.0,72.0,73.3,77.54,5.8,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,gas_lpg_13kg,Gas/LPG,13.0,3151.65,3426.89,3419.24,8.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,kale_sukuma_wiki,Kale-Sukuma Wiki,1.0,92.48,121.21,122.49,1.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,kerosene_paraffin,Kerosene/Paraffin,1.0,155.96,192.56,192.56,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,oranges,Oranges,1.0,110.84,124.69,127.22,2.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,petrol,Petrol,1.0,185.59,214.95,214.95,0.0,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,potatoes_irish,Potatoes (Irish),1.0,91.27,118.05,121.98,3.3,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,spinach,Spinach,1.0,103.43,129.99,127.32,23.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,tomatoes,Tomatoes,1.0,87.87,111.03,106.44,21.1,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf
+2026-09,wheat_flour_white,Wheat Flour-White,2.0,169.43,173.35,181.11,4.5,Kenya-Consumer-Price-Indices-and-Inflation-Rates-September-2026.pdf

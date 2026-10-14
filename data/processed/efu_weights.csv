@@ -1,0 +1,14 @@
+S_No,COICOP,Product,Weight
+1,07.2.2.1.1,Petrol,1.2003
+2,07.2.2.1.2,Diesel,0.12
+Fuel,,,1.3203
+3,04.5.1.0.1,Electricity,1.2656
+4,04.5.2.2.1,Gas/LPG,1.1601
+5,04.5.3.0.1,Kerosene/Paraffin,0.5573
+6,04.5.4.2.1,Firewood,0.1462
+7,04.5.4.3.1,Charcoal,0.8649
+Electricity Gas and Other Fuels,,,3.9942
+8,04.4.1.1.1,Water- Water Service Provider (WSP),0.5165
+9,04.4.1.2.1,Water- Vendors,0.4116
+Utilities,,,0.9281
+Energy Fuel and Utilities (EFU),,,6.2426

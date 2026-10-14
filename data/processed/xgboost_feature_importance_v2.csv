@@ -1,0 +1,13 @@
+feature,importance
+diesel_lag1,0.2174189
+petrol_lag1,0.20868574
+kai_roll3,0.12534754
+kai_lag3,0.09814112
+kai_std3,0.07227894
+month_num,0.06254992
+kai_lag1,0.05002175
+cpi_inflation,0.04749675
+kai_lag2,0.04208199
+trend,0.035585895
+kerosene_lag1,0.027561316
+cpi_lag1,0.012830045

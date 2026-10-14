@@ -1,0 +1,6 @@
+Model,Test Window,MAPE,MAE,RMSE,Notes
+"SARIMA(2,1,1)(1,1,1,12)",1 month,1.59,2.05,2.05,Classical econometric baseline; best single-month
+Theta Method,6 months,8.59,10.62,11.41,"Simple, competitive; strong robustness"
+Prophet,6 months,2.64,3.22,3.86,Smooth trend + seasonality; production-ready
+XGBoost,6 months,12.41,15.37,16.9,Fails on trending series; cannot extrapolate
+Ensemble (SARIMA+Prophet),N/A,~2.0 (est.),—,—,Balanced forecast; recommended for production
