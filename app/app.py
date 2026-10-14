@@ -21,14 +21,64 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 # ============================================================
-# CONFIGURATION
+# CONFIGURATION — FORCE DARK MODE
 # ============================================================
+# Must be the FIRST Streamlit call in the script.
+# Streamlit reads theme config here; setting it after any st.* call is ignored.
+
 st.set_page_config(
     page_title="Kadogo Affordable Index",
     page_icon="🇰🇪",
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+# ---- Force dark mode globally ----
+# 1. Tell Streamlit to use dark theme via its config API
+try:
+    st._config.set_option("theme.base", "dark")
+except Exception:
+    pass
+
+# 2. Write the config file Streamlit reads on startup
+try:
+    _cfg_dir = Path.home() / ".streamlit"
+    _cfg_dir.mkdir(parents=True, exist_ok=True)
+    _cfg_file = _cfg_dir / "config.toml"
+    _cfg_file.write_text(
+        '[theme]\n'
+        'base = "dark"\n'
+        'primaryColor = "#FF6B35"\n'
+        'backgroundColor = "#070A10"\n'
+        'secondaryBackgroundColor = "#12192 6"\n'
+        'textColor = "#FFFFFF"\n'
+        'font = "sans serif"\n'
+    )
+except Exception:
+    pass
+
+# ---- Inject CSS to override any light-mode remnants ----
+st.markdown("""
+<style>
+:root, .stApp, [data-testid="stAppViewContainer"], [data-testid="stHeader"] {
+    color-scheme: dark !important;
+    background-color: #070A10 !important;
+}
+.stApp { color: #FFFFFF !important; }
+section[data-testid="stSidebar"] { color-scheme: dark; }
+[data-testid="stMetricValue"],
+[data-testid="stMetricLabel"],
+[data-testid="stMarkdownContainer"],
+label, p, h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF !important;
+}
+input, textarea, select {
+    background-color: #12192 6 !important;
+    color: #FFFFFF !important;
+    border-color: rgba(255,255,255,0.2) !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 load_dotenv(override=True)
 DEV_GEMINI_KEY = os.getenv("DEV_GEMINI_KEY")
