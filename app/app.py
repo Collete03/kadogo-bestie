@@ -41,18 +41,18 @@ client = get_client()
 WORKING_MODEL = "gemini-3.5-flash-lite"
 
 # ============================================================
-# ROBUST PATH RESOLUTION (local + cloud safe)
+# ROBUST PATH RESOLUTION (local + Streamlit Cloud safe)
 # ============================================================
-# Always resolve paths relative to THIS file's location,
-# not the shell's working directory.
+import os as _os
+
 _HERE = Path(__file__).resolve().parent
 
-# Local project: app.py lives in kadogo-bestie/app/, so data is ../data
-# Cloud: data may be co-located with app.py
+# On Streamlit Cloud, the repo root is one level up from app/
 _candidates = [
-    _HERE.parent / "data",   # kadogo-bestie/data  (local dev)
-    _HERE / "data",          # app/data            (cloud deploy)
-    Path("data"),            # working dir /data   (fallback)
+    _HERE.parent / "data",       # kadogo-bestie/data  (local + cloud)
+    _HERE / "data",              # app/data            (cloud alt)
+    Path.cwd() / "data",         # cwd/data            (fallback)
+    Path.cwd().parent / "data",  # cwd/../data         (fallback)
 ]
 
 DATA_DIR = None
@@ -61,8 +61,8 @@ for _cand in _candidates:
         DATA_DIR = _cand
         break
 
+# NEVER hardcode a Windows path — Cloud is Linux
 if DATA_DIR is None:
-    # Default to local dev layout if none exists yet
     DATA_DIR = _HERE.parent / "data"
 
 PROCESSED = DATA_DIR / "processed"
@@ -70,10 +70,12 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 PROCESSED.mkdir(parents=True, exist_ok=True)
 DB_PATH = DATA_DIR / "feedback.db"
 
-# Sanity check at startup
-print(f"[KAI] DATA_DIR  = {DATA_DIR.resolve()}")
-print(f"[KAI] PROCESSED = {PROCESSED.resolve()}")
+# Cloud-visible diagnostics (also shows in Streamlit Cloud logs)
+print(f"[KAI] _HERE     = {_HERE}")
+print(f"[KAI] DATA_DIR  = {DATA_DIR}")
+print(f"[KAI] PROCESSED = {PROCESSED}")
 print(f"[KAI] Master exists = {(PROCESSED / 'final_kai_timeseries.csv').exists()}")
+print(f"[KAI] CWD       = {Path.cwd()}")
 # ============================================================
 # DATABASE SETUP (Feedback + Alerts)
 # ============================================================
