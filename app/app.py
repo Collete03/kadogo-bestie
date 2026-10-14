@@ -12,6 +12,7 @@ from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
 from google import genai
+from pathlib import Path
 
 import streamlit as st
 import pandas as pd
@@ -39,9 +40,16 @@ def get_client():
 client = get_client()
 WORKING_MODEL = "gemini-3.5-flash-lite"
 
-BASE = Path("C:/Users/Blackheart/Documents/kadogo-bestie")
-PROCESSED = BASE / "data" / "processed"
-DATA_DIR = BASE / "data"
+
+# Automatically detect if running locally or on Streamlit Cloud
+if os.path.exists("data/processed/final_kai_timeseries.csv"):
+    DATA_DIR = Path("data")
+    PROCESSED = DATA_DIR / "processed"
+else:
+    BASE = Path(__file__).parent
+    PROCESSED = BASE / "data" / "processed"
+    DATA_DIR = BASE / "data"
+
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 DB_PATH = DATA_DIR / "feedback.db"
 
