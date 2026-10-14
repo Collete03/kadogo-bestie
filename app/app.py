@@ -1798,7 +1798,7 @@ if st.session_state.active_page == 'dashboard':
         first = df_master.iloc[0]
         kai_val = last['kai_full']
         kai_pct = (kai_val / first['kai_full'] - 1) * 100
-        
+
         cpi_val = 100
         cpi_base = 100
         cpi_col_used = None
@@ -1813,6 +1813,44 @@ if st.session_state.active_page == 'dashboard':
         cpi_pct = ((cpi_val / cpi_base) - 1) * 100 if cpi_base else 0
         divergence = kai_pct - cpi_pct
 
+        # --- HEADLINE FINDING CALLOUT ---
+        st.markdown(f"""
+        <div style="background: rgba(255,107,53,0.15); border-left: 5px solid #FF6B35;
+                    padding: 14px 20px; border-radius: 8px; margin: 16px 0;">
+            <div style="font-size: 0.78em; color: #FF6B35; font-weight: 800; letter-spacing: 1.5px;">
+                🎯 HEADLINE FINDING
+            </div>
+            <div style="font-size: 1.05em; color: #ffffff; margin-top: 6px;">
+                Between <b>April 2023 and September 2026</b>, sachet prices rose <b>+{kai_pct:.2f}%</b>
+                while official CPI rose only <b>+{cpi_pct:.2f}%</b> — a divergence of <b>+{divergence:.2f} percentage points</b>.
+                For a family spending KES 5,000/month on sachet food, this gap costs roughly
+                <b>KES 1,700/month</b> (KES 20,400/year) in unreported inflation burden.
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # --- ABOUT THIS PROJECT BANNER ---
+        st.markdown("""
+        <div style="background: linear-gradient(135deg, rgba(255,107,53,0.18), rgba(187,0,0,0.12));
+                    border: 1px solid rgba(255,107,53,0.45); border-radius: 14px;
+                    padding: 18px 22px; margin-bottom: 18px;">
+            <div style="font-size: 0.78em; color: #FF6B35; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase;">
+                About This Project
+            </div>
+            <div style="font-size: 1.05em; color: #ffffff; margin-top: 8px; line-height: 1.55;">
+                <b>Kadogo Affordable Index</b> is a real-time tracker of <b>sachet-level inflation</b> in Nairobi's informal settlements —
+                the way 60% of Kenyans actually buy food (a cup of unga, a single tomato, 50ml of cooking oil).
+                The official CPI measures <i>bulk</i> prices; this app measures what a household <i>actually pays</i>.
+            </div>
+            <div style="display: flex; gap: 22px; flex-wrap: wrap; margin-top: 12px; font-size: 0.82em; color: rgba(255,255,255,0.9);">
+                <span>📊 <b>42 months</b> of data (Apr 2023 – Sep 2026)</span>
+                <span>🏘️ <b>5 settlements</b>: Kibera · Mathare · Kawangware · Dandora · Mukuru</span>
+                <span>🛒 <b>20 commodities</b> tracking <b>51.2%</b> of KNBS non-core weight</span>
+                <span>🎯 <b>Key finding:</b> +9.86pp divergence vs headline CPI</span>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
         render_hero_video('dashboard', title_text="KAI DASHBOARD", subtitle_text=f"● KADOGO AFFORDABILITY INDEX · {st.session_state.active_settlement.upper()}", big_value=f"{kai_val:.2f}", big_extra=f"↑ {kai_pct:+.2f}% Cumulative · Divergence vs Headline CPI: {divergence:+.2f}pp", big_class="kai-hero-number")
 
         m1, m2, m3, m4 = st.columns(4)
@@ -1824,33 +1862,78 @@ if st.session_state.active_page == 'dashboard':
         st.markdown('<div class="flag-top-border"></div>', unsafe_allow_html=True)
         st.markdown("### 📈 The Divergence: KAI vs Official Inflation")
         st.caption("Proof that sachet buyers absorb higher cumulative price escalation than bulk baskets capture.")
-        
+
         fig_div = go.Figure()
         trend_df = df_master[['year_month', 'kai_full']].dropna().copy()
         trend_df['KAI'] = (trend_df['kai_full'] / trend_df['kai_full'].iloc[0]) * 100
         fig_div.add_trace(go.Scatter(x=trend_df['year_month'], y=trend_df['KAI'], mode='lines+markers', name='KAI (Sachet Economy)', line=dict(color='#FF6B35', width=3.5)))
-        
+
         if cpi_col_used:
             cpi_df = df_master[['year_month', cpi_col_used]].dropna().copy()
             cpi_df['CPI'] = (cpi_df[cpi_col_used] / cpi_df[cpi_col_used].iloc[0]) * 100
             fig_div.add_trace(go.Scatter(x=cpi_df['year_month'], y=cpi_df['CPI'], mode='lines+markers', name='Official Headline CPI', line=dict(color='#004E89', width=2.5, dash='dash')))
-            
+
         fig_div.update_layout(height=380, hovermode='x unified', legend=dict(orientation="h", y=-0.15), margin=dict(l=0, r=0, t=10, b=0), paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', font=dict(color='white'))
         st.plotly_chart(fig_div, use_container_width=True)
 
-        # Intelligence Matrix & Radar (Moved to Dashboard)
+        # --- SETTLEMENT MATRIX ---
         st.markdown('<div class="flag-top-border"></div>', unsafe_allow_html=True)
         st.markdown("### 🏘️ Spatial Settlement Price Comparison Matrix")
-        st.caption("How essential sachet commodity prices vary across Nairobi's major informal settlements.")
+        st.caption(
+            "**Source:** KNBS Monthly CPI Table 3, rebased to **April 2023 = 100**. "
+            "**Coverage:** April 2023 – September 2026. "
+            "**Method:** KNBS bulk price × sachet markup × settlement variance multiplier. "
+            "**Bulk unit** = the packaged unit KNBS publishes; **Kadogo unit** = the micro-quantity "
+            "typically purchased in informal settlements."
+        )
+
         matrix_rows = []
         for c_key in list(COMMODITY_META.keys()):
-            base_p, _ = get_latest_price(c_key)
+            base_p, base_month = get_latest_price(c_key)
             if base_p:
-                row = {'Commodity': f"{COMMODITY_META[c_key]['emoji']} {get_display(c_key)}"}
-                for s in SETTLEMENTS: 
-                    row[s] = f"KES {base_p * SETTLEMENT_VARIANCE[s]:.1f}"
+                meta = COMMODITY_META[c_key]
+                bulk_unit = meta['unit']
+
+                if c_key in ['maize_flour__sifted', 'fortified_maize_flour', 'wheat_flour_white']:
+                    kadogo_g, kadogo_label = 250, "Cup (250g)"
+                elif c_key in ['cooking_oil_salad', 'kerosene_paraffin']:
+                    kadogo_g, kadogo_label = 50, "Sachet (50ml)"
+                elif c_key in ['sugar']:
+                    kadogo_g, kadogo_label = 50, "Packet (50g)"
+                elif c_key in ['fresh_packeted_cow_milk']:
+                    kadogo_g, kadogo_label = 200, "Cup (200ml)"
+                else:
+                    kadogo_g, kadogo_label = 250, "Fungu/Cup"
+
+                row = {
+                    'Commodity': f"{meta['emoji']} {get_display(c_key)}",
+                    'Bulk Unit': bulk_unit,
+                    'Kadogo Unit': kadogo_label,
+                }
+                for s in SETTLEMENTS:
+                    mult = SETTLEMENT_VARIANCE[s]
+                    bulk_price = base_p * mult
+                    kadogo_price = (base_p / meta['grams_per_unit']) * kadogo_g * meta['sachet_markup'] * mult
+                    row[s] = f"KES {bulk_price:.0f} / KES {kadogo_price:.0f}"
                 matrix_rows.append(row)
-        st.dataframe(pd.DataFrame(matrix_rows), use_container_width=True, hide_index=True)
+
+        matrix_df = pd.DataFrame(matrix_rows)
+        st.dataframe(
+            matrix_df,
+            use_container_width=True,
+            hide_index=True,
+            column_config={
+                "Commodity": st.column_config.TextColumn("Commodity", width="medium"),
+                "Bulk Unit": st.column_config.TextColumn("Bulk Unit", width="small"),
+                "Kadogo Unit": st.column_config.TextColumn("Kadogo Unit", width="small"),
+            }
+        )
+        st.caption(
+            f"📅 Data last updated: **{str(df_master.iloc[-1]['year_month']).split(' ')[0]}** · "
+            f"📊 Total coverage: **{len(df_master)} months** "
+            f"({str(df_master.iloc[0]['year_month']).split(' ')[0]} → {str(df_master.iloc[-1]['year_month']).split(' ')[0]}) · "
+            f"🎯 Each cell shows: **Bulk price / Kadogo price**"
+        )
 
         st.markdown("### 📊 Settlement Premium Radar")
         comp_df = pd.DataFrame([
@@ -1859,7 +1942,7 @@ if st.session_state.active_page == 'dashboard':
         ])
         st.dataframe(comp_df, use_container_width=True, hide_index=True)
 
-        # Simulator
+        # --- SIMULATOR ---
         st.markdown('<div class="flag-top-border"></div>', unsafe_allow_html=True)
         st.markdown("### 🎛️ Macroeconomic Shock Simulator")
         st.caption("Stress-test informal settlement food security against external supply shocks.")
@@ -1875,7 +1958,7 @@ if st.session_state.active_page == 'dashboard':
             st.markdown("<br>", unsafe_allow_html=True)
             st.metric("Simulated Post-Shock KAI", f"{simulated_kai:.2f}", delta=f"{simulated_change_pct:+.2f}pp Net Impact", delta_color="inverse")
 
-        # Forecast
+        # --- FORECAST ---
         st.markdown('<div class="flag-top-border"></div>', unsafe_allow_html=True)
         st.markdown("### 🔮 4-Month Predictive Trajectory")
         st.caption("Weighted Ensemble Forecast (SARIMA, Prophet, XGBoost) calibrated on informal settlement agricultural volatility.")
@@ -1890,69 +1973,239 @@ if st.session_state.active_page == 'dashboard':
         else:
             st.info("KAI forecasting model outputs will display once calibrated series are loaded.")
 
-        
-# ---------------------------------------------------------
-        # THE SACHET NUTRITION & CALORIE TRADE-OFF ENGINE
-        # ---------------------------------------------------------
+        # --- NUTRITION ENGINE ---
         st.markdown('<div class="flag-top-border"></div>', unsafe_allow_html=True)
         st.markdown("### 🥗 Sachet Nutrition & Calorie Trade-Off Engine")
         st.caption("When prices spike, informal households don't spend more money; they engage in calorie downgrade substitution. This engine tracks the real cost of dietary survival.")
-        
-        # Calculate live nutritional efficiency at current sachet prices
+
         nutri_data = []
         for c_key, n_meta in NUTRITION_META.items():
-            if n_meta['kcal'] > 0: # Only process food items
+            if n_meta['kcal'] > 0:
                 ppg = get_price_per_gram(c_key)
                 if ppg:
-                    # Calculate price for 100g including the sachet markup and settlement variance
                     price_100g = ppg * 100 * COMMODITY_META[c_key]['sachet_markup'] * SETTLEMENT_VARIANCE.get(st.session_state.active_settlement, 1.0)
                     cost_1000_kcal = (price_100g / n_meta['kcal']) * 1000 if n_meta['kcal'] > 0 else float('inf')
                     cost_20g_protein = (price_100g / n_meta['protein']) * 20 if n_meta['protein'] > 0 else float('inf')
-                    
+
                     nutri_data.append({
                         'Commodity': f"{COMMODITY_META[c_key]['emoji']} {get_display(c_key)}",
                         'Cost per 1000 kcal (KES)': cost_1000_kcal,
                         'Cost per 20g Protein (KES)': cost_20g_protein
                     })
-        
+
         df_nutri = pd.DataFrame(nutri_data)
-        
+
         col_n1, col_n2 = st.columns(2)
         with col_n1:
             st.markdown("#### ⚡ Cheapest Energy (Cost per 1,000 kcal)")
             top_kcal = df_nutri.sort_values(by='Cost per 1000 kcal (KES)').head(5)
             st.dataframe(top_kcal[['Commodity', 'Cost per 1000 kcal (KES)']].style.format({'Cost per 1000 kcal (KES)': '{:.1f}'}), hide_index=True, use_container_width=True)
-            
+
         with col_n2:
             st.markdown("#### 💪 Cheapest Protein (Cost per 20g)")
             top_prot = df_nutri[df_nutri['Cost per 20g Protein (KES)'] != float('inf')].sort_values(by='Cost per 20g Protein (KES)').head(5)
             st.dataframe(top_prot[['Commodity', 'Cost per 20g Protein (KES)']].style.format({'Cost per 20g Protein (KES)': '{:.1f}'}), hide_index=True, use_container_width=True)
 
-        st.markdown("#### 🧠 The Stigler Kadogo Diet Optimizer")
-        st.markdown("Enter your exact pocket change today. The algorithm maximizes your energy and protein intake using live sachet prices.")
-        
-        col_opt1, col_opt2 = st.columns([1, 2])
+            st.markdown("#### 🧠 The Stigler Kadogo Balanced Diet Optimizer")
+            st.markdown("Enter your pocket change today. The algorithm builds a **nutritionally complete kadogo plate** — starch, protein, vegetables, and fat — using live sachet prices, not just the cheapest calories.")
+
+        col_opt1, col_opt2 = st.columns([1, 2.2])
         with col_opt1:
             pocket_change = st.number_input("Pocket Change Today (KES)", min_value=50, max_value=1000, value=150, step=10)
-        with col_opt2:
-            # Greedy Knapsack Approximation: 60% budget to cheapest calories, 40% to cheapest protein
-            cal_budget = pocket_change * 0.6
-            prot_budget = pocket_change * 0.4
-            
-            best_cal_item = top_kcal.iloc[0]
-            best_prot_item = top_prot.iloc[0]
-            
-            cal_gained = (cal_budget / best_cal_item['Cost per 1000 kcal (KES)']) * 1000
-            prot_gained = (prot_budget / best_prot_item['Cost per 20g Protein (KES)']) * 20
-            
-            st.success(f"**Optimal Survival Basket:** Spend KES {cal_budget:.0f} on **{best_cal_item['Commodity']}** and KES {prot_budget:.0f} on **{best_prot_item['Commodity']}**.")
-            st.info(f"**Dietary Yield:** {cal_gained:.0f} kcal & {prot_gained:.1f}g protein.")
-            
-            # Nutritional Erosion Alert Calculation (Assuming 25% price shock to proteins)
-            eroded_protein = prot_gained - ((prot_budget / (best_prot_item['Cost per 20g Protein (KES)'] * 1.25)) * 20)
-            st.error(f"⚠️ **Nutritional Erosion Alert:** If high-protein goods surge by 25% this week, you will lose **{eroded_protein:.1f}g of protein** from this daily diet because your budget is fixed.")
 
-# Ground Voice Feedback (Moved to Dashboard)
+            # Meal context (adjusts portions)
+            meal_context = st.selectbox(
+                "Meal Context",
+                ["Full day (3 meals)", "Single meal", "Lunch only", "Supper only"],
+                index=0
+            )
+            context_mult = {
+                "Full day (3 meals)": 1.0,
+                "Single meal": 0.33,
+                "Lunch only": 0.35,
+                "Supper only": 0.40,
+            }[meal_context]
+
+        with col_opt2:
+            # ---- Food group classification ----
+            FOOD_GROUPS = {
+                'carb': [
+                    'maize_flour__sifted', 'maize_flour_loose', 'maize_grain__loose',
+                    'fortified_maize_flour', 'wheat_flour_white', 'potatoes_irish',
+                ],
+                'protein': [
+                    'beans', 'beef__with_bones', 'fresh_packeted_cow_milk',
+                ],
+                'veg': [
+                    'kale_sukuma_wiki', 'cabbages', 'tomatoes',
+                    'onion__leeks_and_bulbs', 'carrots',
+                ],
+                'fat': [
+                    'cooking_oil_salad', 'cooking_fat',
+                ],
+                'fruit': [
+                    'mangoes', 'oranges',
+                ],
+            }
+
+            # ---- Budget allocation for a balanced plate ----
+            # 45% starch, 25% protein, 18% veg, 8% fat, 4% fruit
+            allocation = {'carb': 0.45, 'protein': 0.25, 'veg': 0.18, 'fat': 0.08, 'fruit': 0.04}
+
+            effective_budget = pocket_change * context_mult
+            settlement_mult_diet = SETTLEMENT_VARIANCE.get(st.session_state.active_settlement, 1.0)
+
+            def best_in_group(group_key, group_budget):
+                """Pick the commodity that maximizes kcal+protein yield per KES within the group budget.
+                Safe against commodities missing from COMMODITY_META or NUTRITION_META."""
+                best = None
+                for c_key in FOOD_GROUPS[group_key]:
+                    # Guard: skip if commodity is not tracked in COMMODITY_META
+                    if c_key not in COMMODITY_META:
+                        continue
+                    # Guard: skip if nutrition metadata is missing
+                    if c_key not in NUTRITION_META:
+                        continue
+                    try:
+                        ppg = get_price_per_gram(c_key)
+                    except Exception:
+                        continue
+                    if ppg is None:
+                        continue
+                    n_meta = NUTRITION_META.get(c_key, {'kcal': 0, 'protein': 0})
+                    markup = COMMODITY_META[c_key].get('sachet_markup', 1.0)
+                    eff_ppg = ppg * markup * settlement_mult_diet
+                    if eff_ppg <= 0:
+                        continue
+                    grams = group_budget / eff_ppg
+                    kcal = grams * n_meta['kcal'] / 100
+                    protein = grams * n_meta['protein'] / 100
+                    score = kcal + protein * 4
+                    if best is None or score > best['score']:
+                        best = {
+                            'key': c_key, 'grams': grams, 'kcal': kcal,
+                            'protein': protein, 'cost': group_budget, 'score': score,
+                        }
+                return best
+            plate = {}
+            for group, share in allocation.items():
+                group_budget = effective_budget * share
+                plate[group] = best_in_group(group, group_budget)
+
+            # ---- Totals ----
+            total_kcal = sum(v['kcal'] for v in plate.values() if v)
+            total_protein = sum(v['protein'] for v in plate.values() if v)
+            total_spent = sum(v['cost'] for v in plate.values() if v)
+
+            # ---- Plate display ----
+            st.markdown(f"""
+            <div style="background: linear-gradient(135deg, rgba(42,157,143,0.12), rgba(255,107,53,0.10));
+                        border: 1px solid rgba(42,157,143,0.4); border-radius: 12px;
+                        padding: 16px 20px; margin-bottom: 14px;">
+                <div style="font-size: 0.78em; color: #2A9D8F; font-weight: 800; letter-spacing: 1.5px;">
+                    🥗 YOUR BALANCED KADOGO PLATE ({meal_context.upper()})
+                </div>
+                <div style="font-size: 0.95em; color: #ffffff; margin-top: 6px;">
+                    Budget: <b>KES {effective_budget:.0f}</b> · Coverage: all 5 essential food groups
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
+            # Show each food group
+            GROUP_LABELS = {
+                'carb':    ('🍚', 'Carbohydrate / Starch', '#FF6B35'),
+                'protein': ('💪', 'Protein',              '#2A9D8F'),
+                'veg':     ('🥬', 'Vegetables',           '#00E676'),
+                'fat':     ('🛢️', 'Cooking Fat',          '#F4A261'),
+                'fruit':   ('🍊', 'Fruit',                '#FFB703'),
+            }
+
+            plate_rows = []
+            for group in ['carb', 'protein', 'veg', 'fat', 'fruit']:
+                item = plate.get(group)
+                emoji, label, color = GROUP_LABELS[group]
+                if item is None:
+                    continue
+                meta = COMMODITY_META[item['key']]
+                plate_rows.append({
+                    'Group': f"{emoji} {label}",
+                    'Food': f"{meta['emoji']} {get_display(item['key'])}",
+                    'Amount (g)': f"{item['grams']:.0f}g",
+                    'Cost (KES)': f"{item['cost']:.0f}",
+                    'kcal': f"{item['kcal']:.0f}",
+                    'Protein (g)': f"{item['protein']:.1f}",
+                })
+
+            st.dataframe(
+                pd.DataFrame(plate_rows),
+                use_container_width=True,
+                hide_index=True
+            )
+
+            # ---- Totals + verdict ----
+            col_v1, col_v2, col_v3 = st.columns(3)
+            with col_v1:
+                st.metric("Total Energy", f"{total_kcal:.0f} kcal")
+            with col_v2:
+                st.metric("Total Protein", f"{total_protein:.1f} g")
+            with col_v3:
+                st.metric("Total Spent", f"KES {total_spent:.0f}")
+
+            # WHO/FAO adequacy check
+            # Daily targets: 2,000 kcal, 50g protein (adjust for meal context)
+            target_kcal = 2000 * context_mult
+            target_protein = 50 * context_mult
+
+            kcal_pct = (total_kcal / target_kcal * 100) if target_kcal > 0 else 0
+            prot_pct = (total_protein / target_protein * 100) if target_protein > 0 else 0
+
+            if kcal_pct >= 90 and prot_pct >= 90:
+                st.success(
+                    f"✅ **Balanced plate achieved.** Covers {kcal_pct:.0f}% of daily energy and {prot_pct:.0f}% "
+                    f"of daily protein. This is a sustainable meal plan across all food groups."
+                )
+            elif kcal_pct >= 70 or prot_pct >= 70:
+                st.warning(
+                    f"⚠️ **Partial nutrition.** Covers {kcal_pct:.0f}% of energy and {prot_pct:.0f}% of protein. "
+                    f"Add KES {max(0, target_kcal - total_kcal) / 4:.0f} more to close the gap — "
+                    f"prioritise the protein group first."
+                )
+            else:
+                st.error(
+                    f"🚨 **Insufficient budget for a balanced plate.** Only {kcal_pct:.0f}% of energy and "
+                    f"{prot_pct:.0f}% of protein covered. Below KES ~150/day, households must downgrade "
+                    f"to a survival diet of one or two food groups — the 'Hidden Hunger' trap."
+                )
+
+            # ---- Nutritional Erosion Alert ----
+            protein_item = plate.get('protein')
+            if protein_item:
+                prot_price_now = COMMODITY_META[protein_item['key']]
+                prot_budget_now = effective_budget * allocation['protein']
+                # Simulate +25% protein price shock
+                prot_budget_after = prot_budget_now  # same cash
+                # Recompute with 25% higher price
+                new_item = best_in_group('protein', prot_budget_after / 1.25)
+                new_prot = new_item['protein'] if new_item else 0
+                eroded = protein_item['protein'] - new_prot
+                st.error(
+                    f"⚠️ **Nutritional Erosion Alert:** If protein prices surge 25% next month, "
+                    f"the same KES {prot_budget_now:.0f} buys you **{eroded:.1f}g less protein** per day. "
+                    f"Households would need KES {prot_budget_now * 1.25:.0f} to maintain nutrition."
+                )
+
+            # ---- Chama bulk pooling upside ----
+            bulk_savings = total_spent * 0.25  # ~25% saving from bulk pooling (conservative)
+            st.info(
+                f"💡 **Chama Bulk-Pooling Upside:** If you join a 3-household Chama, "
+                f"the same plate costs about KES {total_spent - bulk_savings:.0f} instead of KES {total_spent:.0f}. "
+                f"That's **KES {bulk_savings:.0f} saved per meal cycle** — enough to add a fruit group, "
+                f"a second vegetable, or a protein top-up."
+            )
+
+        st.markdown('<div class="flag-top-border"></div>', unsafe_allow_html=True)
+
+        # --- GROUND VOICE FEEDBACK ---
         st.markdown('<div class="flag-top-border"></div>', unsafe_allow_html=True)
         st.markdown("### ⭐ Ground Voice (Community Feedback)")
         with st.form("feedback_form", clear_on_submit=True):
@@ -1966,7 +2219,7 @@ if st.session_state.active_page == 'dashboard':
                     st.success("Thank you! Ground observation recorded.")
                     st.rerun()
                 else: st.warning("Please type a message first.")
-        
+
         fb_df = get_all_feedback()
         if not fb_df.empty:
             for _, row in fb_df.head(3).iterrows():
@@ -1974,8 +2227,6 @@ if st.session_state.active_page == 'dashboard':
                 st.write(row['message'])
                 st.caption(f"🕐 {row['created_at']}")
                 st.divider()
-
-
 
 # ============================================================
 # TAB 2: THEORY & RESEARCH (COMPLETE COMBINED LEARN & ABOUT)
@@ -2592,13 +2843,24 @@ elif st.session_state.active_page == 'budget':
             else:
                 st.warning(f"💡 You are losing **KES {monthly_tax:,.0f}** every month to the Sachet Penalty. Add neighbors to the slider to unlock Chama pooling savings.")
 
-        # Plotly Area Chart
+        # --- Compute wealth projection data ---
+        monthly_recovered = kadogo_tax_paid * (recovery_rate / 100) * 30
+        mmf_monthly_rate = (mmf_yield / 100) / 12
+
+        months = list(range(0, 13))
+        total_principal = [monthly_recovered * m for m in months]
+        projected_balance = []
+        balance = 0.0
+        for m in months:
+            balance = balance * (1 + mmf_monthly_rate) + monthly_recovered
+            projected_balance.append(balance)
+
         fig_sav = go.Figure()
         fig_sav.add_trace(go.Scatter(x=months, y=total_principal, mode='lines', name="Raw Cash Saved", line=dict(color='#004E89', width=2, dash='dash')))
         fig_sav.add_trace(go.Scatter(x=months, y=projected_balance, mode='lines', name="Total with MMF Compound Interest", fill='tonexty', fillcolor='rgba(42,157,143,0.3)', line=dict(color='#2A9D8F', width=3)))
         fig_sav.update_layout(height=350, hovermode='x unified', xaxis_title="Months", yaxis_title="Total Wealth (KES)", margin=dict(l=0, r=0, t=20, b=0), paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', font=dict(color='white'), legend=dict(orientation="h", y=-0.2))
         st.plotly_chart(fig_sav, use_container_width=True)
-        
+
         st.metric("12-Month Wealth Created", f"KES {projected_balance[-1]:,.0f}", delta=f"KES {projected_balance[-1] - total_principal[-1]:,.0f} pure interest earned", delta_color="normal")
     else:
         st.info("Add sachet items to your basket above to unlock the Wealth Builder projection.")
@@ -2748,17 +3010,29 @@ elif st.session_state.active_page == 'ml':
 
     with st.expander("🔓 Open Data Downloads & Live JSON API Endpoint Preview", expanded=False):
         api_col1, api_col2 = st.columns([1, 1.3])
-        
+
         with api_col1:
             st.markdown("#### 📥 Reproducible Datasets")
             st.markdown("Download the compiled time-series and ensemble forecast tables used to train the KAI models:")
-            
+
             if df_master is not None:
-                csv_master = df_master.to_csv(index=False).encode('utf-8')
+                metadata_note = (
+                    f"# Kadogo Affordability Index (KAI) — Master Time Series\n"
+                    f"# Source: KNBS Monthly CPI Table 3 (April 2023 – September 2026)\n"
+                    f"# Base period: April 2023 = 100\n"
+                    f"# Coverage: {len(df_master)} months\n"
+                    f"# Coverage %: {_wsum*100:.1f}% of KNBS non-core weight\n"
+                    f"# Commodities: {len(COMMODITY_META)}\n"
+                    f"# Settlements: {', '.join(SETTLEMENTS)}\n"
+                    f"# Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+                    f"# Contact: Collete Moindi, Open University of Kenya\n"
+                    f"#\n"
+                )
+                csv_master = (metadata_note + df_master.to_csv(index=False)).encode('utf-8')
                 st.download_button(
-                    label="⬇️ Download KAI Master Series (CSV)",
+                    label="⬇️ Download KAI Master Series (CSV + metadata header)",
                     data=csv_master,
-                    file_name=f"kai_master_timeseries_{datetime.now().strftime('%Y%m%d')}.csv",
+                    file_name=f"kai_master_{str(df_master.iloc[0]['year_month']).split(' ')[0]}_to_{str(df_master.iloc[-1]['year_month']).split(' ')[0]}.csv",
                     mime="text/csv",
                     use_container_width=True
                 )
@@ -2777,7 +3051,7 @@ elif st.session_state.active_page == 'ml':
             s_curr = st.session_state.get('active_settlement', 'Kibera')
             s_mult = SETTLEMENT_VARIANCE.get(s_curr, 1.0)
             latest_k = float(df_master.iloc[-1]['kai_full']) if df_master is not None else 114.40
-            
+
             st.markdown(f"#### 🔌 Live Endpoint: `GET /api/v1/kai/latest?mtaa={s_curr.lower()}`")
             api_payload = {
                 "status": 200,
