@@ -40,19 +40,40 @@ def get_client():
 client = get_client()
 WORKING_MODEL = "gemini-3.5-flash-lite"
 
+# ============================================================
+# ROBUST PATH RESOLUTION (local + cloud safe)
+# ============================================================
+# Always resolve paths relative to THIS file's location,
+# not the shell's working directory.
+_HERE = Path(__file__).resolve().parent
 
-# Automatically detect if running locally or on Streamlit Cloud
-if os.path.exists("data/processed/final_kai_timeseries.csv"):
-    DATA_DIR = Path("data")
-    PROCESSED = DATA_DIR / "processed"
-else:
-    BASE = Path(__file__).parent
-    PROCESSED = BASE / "data" / "processed"
-    DATA_DIR = BASE / "data"
+# Local project: app.py lives in kadogo-bestie/app/, so data is ../data
+# Cloud: data may be co-located with app.py
+_candidates = [
+    _HERE.parent / "data",   # kadogo-bestie/data  (local dev)
+    _HERE / "data",          # app/data            (cloud deploy)
+    Path("data"),            # working dir /data   (fallback)
+]
 
+DATA_DIR = None
+for _cand in _candidates:
+    if (_cand / "processed" / "final_kai_timeseries.csv").exists():
+        DATA_DIR = _cand
+        break
+
+if DATA_DIR is None:
+    # Default to local dev layout if none exists yet
+    DATA_DIR = _HERE.parent / "data"
+
+PROCESSED = DATA_DIR / "processed"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
+PROCESSED.mkdir(parents=True, exist_ok=True)
 DB_PATH = DATA_DIR / "feedback.db"
 
+# Sanity check at startup
+print(f"[KAI] DATA_DIR  = {DATA_DIR.resolve()}")
+print(f"[KAI] PROCESSED = {PROCESSED.resolve()}")
+print(f"[KAI] Master exists = {(PROCESSED / 'final_kai_timeseries.csv').exists()}")
 # ============================================================
 # DATABASE SETUP (Feedback + Alerts)
 # ============================================================
